@@ -1,0 +1,12 @@
+<h3>GIF Searcher</h3>
+<form [formGroup]="searchForm" (ngSubmit)="processForm()">
+    <input type="text" size="30" placeholder="Enter text to search" formControlName="text">
+    <select formControlName="count">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+    </select>
+    <button type="submit">Search</button>
+</form>
